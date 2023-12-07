@@ -18,7 +18,13 @@ public class Car {
     }
 
     public void setBrand(String brand) {
-        this.brand = brand;
+        if (brand ==null) brand= "Unknown" ;
+        String lowercaseBrand = brand.toLowerCase();
+        switch (lowercaseBrand) {
+            case "holden", "porsche", "tesla" -> this.brand = brand;
+            default -> this.brand = "Unsupported";
+        }
+
     }
 
     public String getModel() {
