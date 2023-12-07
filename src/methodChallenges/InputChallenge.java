@@ -1,3 +1,5 @@
+package methodChallenges;
+
 import java.util.Scanner;
 
 public class InputChallenge {

@@ -1,3 +1,5 @@
+package methodChallenges;
+
 public class MethodCalleng1 {
     public static void main(String[] args) {
         System.out.println("5ft, 8in = " + toCentimeter(5,8) + " cm");

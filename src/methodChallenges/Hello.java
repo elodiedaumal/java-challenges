@@ -1,3 +1,5 @@
+package methodChallenges;
+
 public class Hello {
         public static void main(String[] args) {
             boolean gameOver = true;

@@ -1,3 +1,5 @@
+package methodChallenges;
+
 public class MethodeChallenge2 {
 
     public static void main(String[] args) {

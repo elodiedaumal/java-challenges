@@ -1,3 +1,5 @@
+package methodChallenges;
+
 import java.util.Scanner;
 
 public class MinMaxChallenge {
@@ -21,14 +23,17 @@ public class MinMaxChallenge {
                 }
                 counter ++;
 
-                System.out.println("The maximum number entered is " + max + " and the minimum number entered is " + min );
                }
             catch(NumberFormatException e){
                 break;
             }
 
         }
+if(counter>0) {
+    System.out.println("The maximum number entered is " + max + " and the minimum number entered is " + min );
 
+}
+else System.out.println("No valid data entered");
 
 
     }
