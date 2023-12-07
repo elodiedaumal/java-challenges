@@ -2,6 +2,12 @@ package oopChallenges;
 
 public class CarRunner {
     public static void main(String[] args) {
-        System.out.println("test");
+        Car car = new Car();
+        car.describeCar();
+        System.out.println(car.getBrand());
+        car.setBrand("Renault");
+
+        System.out.println(car.getBrand());
+        car.describeCar();
     }
 }
