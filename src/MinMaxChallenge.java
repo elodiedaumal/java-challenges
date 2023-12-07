@@ -21,7 +21,7 @@ public class MinMaxChallenge {
                 }
                 counter ++;
 
-                System.out.println("The maximum number entered is " + max + "The minimum number entered is " + min );
+                System.out.println("The maximum number entered is " + max + " and the minimum number entered is " + min );
                }
             catch(NumberFormatException e){
                 break;
