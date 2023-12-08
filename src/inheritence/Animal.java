@@ -18,11 +18,11 @@ public class Animal  {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "Animal: " +
                 "type='" + type + '\'' +
                 ", size='" + size + '\'' +
-                ", weight=" + weight +
-                '}';
+                ", weight=" + weight + '\''
+                ;
     }
 
     public void move(String speed){
@@ -31,5 +31,7 @@ public class Animal  {
 
     public void makeNoise(){
         System.out.println(type + " makes noise");
+    } public void randomAction(){
+        System.out.println(type + " do something specific of " + type);
     }
 }

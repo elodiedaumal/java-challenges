@@ -6,17 +6,66 @@ public class Dog extends Animal {
 
     public Dog(String earShape, String tailShape) {
         super("Labrador", "big", 50.4);
+
+    }  public Dog(String type, double weight) {
+        this(type, weight,"long and fluffy", "small and curly");
+
+    }
+
+    public Dog(String type,  double weight, String earShape, String tailShape) {
+        super(type, weight<15? "small" : (weight<35? "medium":"big"), weight);
         this.earShape = earShape;
         this.tailShape = tailShape;
     }
 
-    public void bark(){
-        System.out.println("woof");
-    } public void run(){
-        System.out.println("run");
-    } public void walk(){
-        System.out.println("walk");
-    } public void wagTail(String speed){
-        System.out.println("wag tail");
+    private void bark(){
+        System.out.print("woof! ");
+}   private void walk(){
+        System.out.print("walk ");
+}   private void run(){
+        System.out.print("run ");
+}private void wagTail(){
+        System.out.print("wag tail ");
+}
+
+    public void move(String speed){
+        super.move(speed);
+        if(speed=="slow"){
+//            System.out.print("walk slowly ");
+            walk();
+            wagTail();
+        }
+        else if(speed=="fast") {
+//            System.out.print("run ");
+            run();
+            bark();
+        }
+        else System.out.println("cruise");
+        System.out.println();
+    }
+
+    @Override
+    public void makeNoise() {
+        bark();
+        System.out.println();
+    } @Override
+    public void randomAction() {
+        super.randomAction();
+        System.out.println(" wag tail ");
+
+    }
+
+/*public  void randomAction(){
+    System.out.println("waig tail");
+}*/
+
+
+
+    @Override
+    public String toString() {
+        return super.toString() +
+            ", earShape='" + earShape + '\'' +
+                    ", tailShape='" + tailShape + '\''
+        ;
     }
 }
