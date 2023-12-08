@@ -38,7 +38,7 @@ public class Dog extends Animal {
         else if(speed=="fast") {
 //            System.out.print("run ");
             run();
-            bark();
+            makeNoise();
         }
         else System.out.println("cruise");
         System.out.println();
@@ -46,9 +46,15 @@ public class Dog extends Animal {
 
     @Override
     public void makeNoise() {
-        bark();
+        if(type=="wolf"){
+            System.out.print("woooooooooooooo!");
+        }
+        else bark();
         System.out.println();
-    } @Override
+    }
+
+
+    @Override
     public void randomAction() {
         super.randomAction();
         System.out.println(" wag tail ");
