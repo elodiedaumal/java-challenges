@@ -15,7 +15,7 @@ public class Customer {
         this(name,500.88,emailAddress);
     }
     public Customer() {
-        this("elodie daumal",2568.99,"elodie@gmail.com");
+        this("elodie daumal","elodie@gmail.com");
     }
 
 
