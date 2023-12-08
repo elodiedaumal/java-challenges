@@ -70,8 +70,8 @@ public class Dog extends Animal {
     @Override
     public String toString() {
         return super.toString() +
-            ", earShape='" + earShape + '\'' +
-                    ", tailShape='" + tailShape + '\''
+            ", earShape='" + earShape +
+                    ", tailShape='" + tailShape
         ;
     }
 }
