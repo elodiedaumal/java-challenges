@@ -23,5 +23,10 @@ public class BankAccountRunner {
         elodieAccount.withdrawFunds(54.46);
 
         elodieAccount.withdrawFunds(54.45);
+
+        Account timAccount = new Account("Tim", "tim.com",
+                "153148688");
+
+        System.out.println(timAccount.getNumber() +timAccount.getCustomerName() );
     }
 }
