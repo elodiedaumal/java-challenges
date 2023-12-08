@@ -4,7 +4,7 @@ public class RecordProjectRunner {
     public static void main(String[] args) {
 
         for(int i=1;i<=5;i++){
-            Student s = new Student(
+            LPAStudent s = new LPAStudent(
                     switch(i){
                         case 1 ->"Elodie";
                         case 2 ->"Elisa";
