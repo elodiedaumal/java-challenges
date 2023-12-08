@@ -26,6 +26,17 @@ public class RecordProjectRunner {
             System.out.println(s);
         }
 
+        Student pojoStudent = new Student("elodie","F1542","11/11/1988","Java masterclasse");
+        System.out.println(pojoStudent);
 
+
+        LPAStudent recordStudent = new LPAStudent("elisa","F1518","04/04/1988","Java masterclasse");
+        System.out.println(recordStudent);
+
+        pojoStudent.setClassList(pojoStudent.getClassList() + " and Vue mastery");
+//        recordStudent.setClassList(recordStudent.classList() + "Vue mastery");
+
+        System.out.println(pojoStudent.getName() + " is taking " + pojoStudent.getClassList());
+        System.out.println(recordStudent.name() + " is taking " + recordStudent.classList());
     }
 }

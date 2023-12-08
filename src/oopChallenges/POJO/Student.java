@@ -14,6 +14,10 @@ public class Student {
         this.classList = classList;
     }
 
+    public void setClassList(String classList) {
+        this.classList = classList;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -22,5 +26,21 @@ public class Student {
                 ", dateOfBirth='" + dateOfBirth + '\'' +
                 ", classList='" + classList + '\'' +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public String getClassList() {
+        return classList;
     }
 }
