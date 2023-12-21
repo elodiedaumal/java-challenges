@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class MovieRunner {
     public static void main(String[] args) {
-//Movie theMovie = Movie.getMovie("comedy", "LOTR");
-//theMovie.watchMovie();
+
 
         Scanner scanner = new Scanner(System.in);
         while(true) {

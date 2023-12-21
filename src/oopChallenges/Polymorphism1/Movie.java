@@ -38,6 +38,9 @@ class Adventure extends Movie {
         System.out.printf("... %s%n".repeat(3), "Pleasant scene","landscape images", "love story ");
     }
 
+    public void watchAdventureMovie() {
+        System.out.println("Watching an Adventure movie");
+    }
 
 }
 
@@ -52,7 +55,9 @@ class Comedy extends Movie {
         super.watchMovie();
         System.out.printf("... %s%n".repeat(3), "Pleasant scene","Funny jokes", "someone fell");
     }
-
+    public void watchComedyMovie() {
+        System.out.println("Watching an Comedy movie");
+    }
 
 }
 
@@ -66,6 +71,10 @@ class SciFi extends Movie {
     public void watchMovie() {
         super.watchMovie();
         System.out.printf("... %s%n".repeat(3), "Space scene","fight alien", "Return to earth");
+    }
+
+    public void watchSciFiMovie() {
+        System.out.println("Watching an SciFi movie");
     }
 
 
